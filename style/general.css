@@ -1,0 +1,16 @@
+body{
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#container{
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.1);
+}
