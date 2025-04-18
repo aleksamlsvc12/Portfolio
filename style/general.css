@@ -13,4 +13,11 @@ body{
   background-color: white;
   border-radius: 40px;
   box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.1);
+  min-width: 450px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  user-select: none;
 }
