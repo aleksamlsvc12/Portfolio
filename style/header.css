@@ -1,8 +1,11 @@
 header{
-  padding: 46px 36px;
+  height: 16%;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: flex-direction 0.2s;
 }
 
 header p{
@@ -16,6 +19,7 @@ header p{
 #name{
   font-weight: bold;
   font-size: 32px;
+  user-select: none;
 }
 
 #container-tabs{
@@ -48,4 +52,27 @@ header p{
 
 .tab:hover::after{
   transform: scaleX(1);
+}
+
+#dark-theme{
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 10px;
+  background-image: url('../icons/dark-theme.svg');
+  background-size: contain;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+@media (max-width: 730px){
+  header{
+    flex-direction: column;
+  }
+
+  #name{
+    margin-top: 20px;
+  }
 }
