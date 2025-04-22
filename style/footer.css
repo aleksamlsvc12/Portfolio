@@ -17,6 +17,8 @@ footer{
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  opacity: 0;
+  animation: appear 1s ease-out forwards;
 }
 
 .contact:hover{
@@ -25,12 +27,21 @@ footer{
 
 .github{
   background-image: url('../icons/github.svg');
+  animation-delay: 0.2s;
 }
 
 .linkedin{
   background-image: url('../icons/linkedin.svg');
+  animation-delay: 0.4s;
 }
 
 .email{
   background-image: url('../icons/email.svg');
+  animation-delay: 0.6s;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
 }
