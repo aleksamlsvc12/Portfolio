@@ -1,11 +1,3 @@
-main{
-  width: 100%;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #desc{
   width: 100%;
   padding-left: 50px;
@@ -38,14 +30,6 @@ main{
   margin: 0;
   margin-bottom: 10px;
   transition: 0.3s;
-}
-
-.break-row{
-  display: block;
-}
-
-.color{
-  color: rgb(140, 0, 140);
 }
 
 #title-desc{

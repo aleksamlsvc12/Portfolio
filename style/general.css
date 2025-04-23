@@ -25,3 +25,19 @@ a{
   color: black;
   user-select: none;
 }
+
+main{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.break-row{
+  display: block;
+}
+
+.color{
+  color: rgb(140, 0, 140);
+}

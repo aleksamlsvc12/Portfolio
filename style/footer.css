@@ -18,8 +18,7 @@ footer{
   background-size: cover;
   background-position: center;
   cursor: pointer;
-  opacity: 0;
-  animation: appear 1s ease-out forwards;
+  animation: appear 1s ease-out both;
 }
 
 .contact:hover{
@@ -42,6 +41,10 @@ footer{
 }
 
 @keyframes appear {
+  from{
+    opacity: 0;
+  }
+  
   to {
     opacity: 1;
   }
