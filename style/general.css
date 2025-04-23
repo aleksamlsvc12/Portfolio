@@ -17,6 +17,7 @@ body{
   min-width: 450px;
   display: flex;
   flex-direction: column;
+  transition: 0.3s;
 }
 
 a{

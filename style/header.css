@@ -72,12 +72,15 @@ header p{
   transform: rotate(360deg);
 }
 
-@media (max-width: 730px){
+@media (max-width: 1330px){
   header{
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
 
   #name{
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
