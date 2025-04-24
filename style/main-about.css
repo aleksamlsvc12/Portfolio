@@ -1,11 +1,12 @@
 .about-divs{
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
-  width: 25%;
-  height: 45%;
+  width: 430px;
+  height: 260px;
   border-radius: 20px;
   padding: 30px;
   animation: slideDown 1s ease-out both;
   user-select: none;
+  transition: 0.3s all;
 }
 
 #main-about{
@@ -116,15 +117,15 @@
 }
 
 .bar1{
-  animation: fillBar1 2.2s ease-out both;
+  animation: fillBar1 2s ease-out both;
 }
 
 .bar2{
-  animation: fillBar2 2.2s ease-out both;
+  animation: fillBar2 2s ease-out both;
 }
 
 .bar3{
-  animation: fillBar3 2.2s ease-out both;
+  animation: fillBar3 2s ease-out both;
 }
 
 @keyframes fillBar1{
@@ -162,3 +163,124 @@
     width: 60%;
   }
 }
+
+@media(max-width:1660px){
+  .header-about{
+    font-size: 18px;
+  }
+
+  .txt-about{
+    font-size: 12px;
+  }
+
+  .edu-desc{
+    font-size: 12px;
+  }
+
+  .edu-header{
+    font-size: 14px;
+  }
+
+  .skill{
+    font-size: 14px;
+  }
+
+  .progress-bar{
+    width: 300px;
+    height: 10px;
+  }
+
+  .about-divs{
+    padding: 20px;
+    width: 380px;
+    height: 220px;
+  }
+}
+
+@media(max-width:1420px){
+  #main-about{
+    flex-direction: column;
+  }
+  
+  header{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #name{
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-divs{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  body{
+    overflow: hidden;
+  }
+  
+  #container{
+    overflow-y: auto;
+  }
+
+  footer{
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+}
+
+@media(max-width:600px){
+  .header-about{
+    font-size: 16px;
+  }
+
+  .txt-about{
+    font-size: 12px;
+  }
+
+  .edu-desc{
+    font-size: 10px;
+  }
+
+  .edu-header{
+    font-size: 14px;
+  }
+
+  .skill{
+    font-size: 12px;
+  }
+
+  .progress-bar{
+    width: 300px;
+    height: 6px;
+  }
+
+  .about-divs{
+    padding: 20px;
+    width: 320px;
+    height: 220px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(140, 0, 140);
+  border-radius: 10px;
+}
+
+
