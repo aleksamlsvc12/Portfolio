@@ -175,6 +175,17 @@ button img{
     width: 16px;
     height: 16px;
   }
+
+  header{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media(max-width:1000px){
@@ -187,15 +198,3 @@ button img{
   }
 }
 
-@media (max-width: 1330px){
-  header{
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-
-  #name{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-}

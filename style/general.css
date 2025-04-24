@@ -41,3 +41,18 @@ main{
 .color{
   color: rgb(140, 0, 140);
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(140, 0, 140);
+  border-radius: 10px;
+}

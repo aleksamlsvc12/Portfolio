@@ -17,7 +17,6 @@ footer{
   user-select: none;
   background-size: cover;
   background-position: center;
-  cursor: pointer;
   animation: appear 1s ease-out both;
 }
 

@@ -9,7 +9,7 @@
   transition: 0.3s all;
 }
 
-#main-about{
+main{
   justify-content: space-around;
 }
 
@@ -186,7 +186,6 @@
   }
 
   .progress-bar{
-    width: 300px;
     height: 10px;
   }
 
@@ -198,7 +197,7 @@
 }
 
 @media(max-width:1420px){
-  #main-about{
+  main{
     flex-direction: column;
   }
   
@@ -219,10 +218,6 @@
     margin-bottom: 20px;
     margin-top: 20px;
   }
-
-  body{
-    overflow: hidden;
-  }
   
   #container{
     overflow-y: auto;
@@ -240,16 +235,8 @@
     font-size: 16px;
   }
 
-  .txt-about{
-    font-size: 12px;
-  }
-
   .edu-desc{
     font-size: 10px;
-  }
-
-  .edu-header{
-    font-size: 14px;
   }
 
   .skill{
@@ -257,30 +244,12 @@
   }
 
   .progress-bar{
-    width: 300px;
     height: 6px;
   }
 
   .about-divs{
-    padding: 20px;
     width: 320px;
-    height: 220px;
   }
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-  margin: 30px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(140, 0, 140);
-  border-radius: 10px;
 }
 
 
