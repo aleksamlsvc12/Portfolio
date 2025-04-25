@@ -15,7 +15,7 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  transition: transform 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -25,6 +25,7 @@ main{
 
 .project:hover{
   transform: scale(0.95);
+  box-shadow: 0 0 10px 10px rgba(140, 0, 140, 0.1);
 }
 
 main a{
@@ -117,3 +118,49 @@ main a{
   background-color: rgb(190, 190, 190);
 }
 
+@media (max-width: 1690px) {
+  main{
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+  }
+  
+  header{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  #container{
+    overflow: auto;
+  }
+
+  footer{
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1260px){
+  main{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 850px){
+  main{
+    grid-template-columns: 1fr;
+  }
+
+  header{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #name{
+    margin-bottom: 20px;
+  }
+
+  #container-name{
+    margin: 0;
+  }
+}
