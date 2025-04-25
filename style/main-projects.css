@@ -1,0 +1,119 @@
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.project{
+  width: 290px;
+  height: 100px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.4s ease-out both;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.project p{
+  margin: 0;
+}
+
+.project:hover{
+  transform: scale(0.95);
+}
+
+main a{
+  border-radius: 50px;
+}
+
+.one{
+  animation-delay: 0.2s;
+}
+
+.two{
+  animation-delay: 0.4s;
+}
+
+.three{
+  animation-delay: 0.6s;
+}
+
+.four{
+  animation-delay: 0.8s;
+}
+
+.five{
+  animation-delay: 1s;
+}
+
+.six{
+  animation-delay: 1.2s;
+}
+
+.seven{
+  animation-delay: 1.4s;
+}
+
+.eight{
+  animation-delay: 1.6s;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+.project-header{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.stats-div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  width: 100%;
+}
+
+.stats{
+  width: 80px;
+  height: 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 6px;
+}
+
+.stats-beginner{
+  background-color:rgb(76, 175, 80);
+}
+
+.stats-intermediate{
+  background-color: rgb(255, 193, 7);
+}
+
+.stats-advanced{
+  background-color: rgb(255, 82, 82);
+}
+
+.stats-completed{
+  background-color: rgb(56, 142, 60);
+}
+
+.stats-date{
+  background-color: rgb(190, 190, 190);
+}
+
