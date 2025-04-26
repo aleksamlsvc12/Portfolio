@@ -28,7 +28,7 @@ header p{
   align-items: center;
 }
 
-.tab{
+.tab, .darkTab{
   margin-left: 20px;
   margin-right: 20px;
   font-size: 16px;
@@ -37,7 +37,7 @@ header p{
   position: relative;
 }
 
-.tab::after{
+.tab::after, .darkTab::after{
   content: '';
   position: absolute;
   left: 0;
@@ -50,7 +50,11 @@ header p{
   transition: 0.3s;
 }
 
-.tab:hover::after{
+.darkTab::after{
+  background-color: white;
+}
+
+.tab:hover::after, .darkTab:hover::after{
   transform: scaleX(1);
 }
 

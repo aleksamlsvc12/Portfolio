@@ -4,7 +4,6 @@ window.onload = function(){
   }else{
     localStorage.getItem('theme');
   }
-
   applyTheme();
 }
 
@@ -21,8 +20,11 @@ function applyTheme() {
   let aboutDivs = document.getElementsByClassName('about-divs');
   let headerAbout = document.getElementsByClassName('header-about');
   let progressBar = document.getElementsByClassName('progress-bar');
-
   let currentTheme = localStorage.getItem('theme');
+
+  for(let i=0;i<tabs.length;i++){
+    tabs[i].classList.add('darkTab');
+  }
 
   if (currentTheme === 'darkTheme') {
     body.style.backgroundColor = 'black';
@@ -49,6 +51,10 @@ function applyTheme() {
     }
 
   } else {
+    for(let i=0;i<tabs.length;i++){
+      tabs[i].classList.remove('darkTab');
+    }
+
     body.style.backgroundColor = 'lightgray';
 
     if(title) title.style.color = 'black';
