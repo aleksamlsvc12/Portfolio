@@ -1,8 +1,6 @@
 window.onload = function(){
   if (!localStorage.getItem('theme')) {
     localStorage.setItem('theme', 'whiteTheme');
-  }else{
-    localStorage.getItem('theme');
   }
   applyTheme();
 }
@@ -12,6 +10,7 @@ function applyTheme() {
   let container = document.getElementById('container');
   let name = document.getElementById('name');
   let tabs = document.getElementsByClassName('tab');
+  let darkThemeButton = document.getElementsByClassName('dark-theme')[0];
   let title = document.getElementById('title');
   let titleDesc = document.getElementById('title-desc');
   let profile = document.getElementById('profile');
@@ -20,13 +19,18 @@ function applyTheme() {
   let aboutDivs = document.getElementsByClassName('about-divs');
   let headerAbout = document.getElementsByClassName('header-about');
   let progressBar = document.getElementsByClassName('progress-bar');
+  let github = document.getElementsByClassName('github')[0];
+  let linkedin = document.getElementsByClassName('linkedin')[0];
+  let email = document.getElementsByClassName('email')[0];
   let currentTheme = localStorage.getItem('theme');
 
-  for(let i=0;i<tabs.length;i++){
-    tabs[i].classList.add('darkTab');
-  }
-
   if (currentTheme === 'darkTheme') {
+    for(let i=0;i<tabs.length;i++){
+      tabs[i].classList.add('darkTab');
+    }
+
+    darkThemeButton.classList.add('white-theme');
+
     body.style.backgroundColor = 'black';
 
     if(title) title.style.color = 'white';
@@ -34,6 +38,9 @@ function applyTheme() {
     if(profile) profile.style.boxShadow = '10px 10px 10px 4px rgba(255, 255, 255, 0.1)';
     if(container) container.style.backgroundColor = 'rgb(20, 20, 20)';
     if(name) name.style.color = 'white';
+    if(github) github.style.backgroundImage = "url('../icons/github-white.svg')";
+    if(linkedin) linkedin.style.backgroundImage = "url('../icons/linkedin-white.svg')";
+    if(email) email.style.backgroundImage = "url('../icons/email-white.svg')";
     
     for(let i = 0; i < tabs.length; i++) {
       tabs[i].style.color = 'white';
@@ -55,6 +62,8 @@ function applyTheme() {
       tabs[i].classList.remove('darkTab');
     }
 
+    darkThemeButton.classList.remove('white-theme');
+
     body.style.backgroundColor = 'lightgray';
 
     if(title) title.style.color = 'black';
@@ -62,6 +71,9 @@ function applyTheme() {
     if(profile) profile.style.boxShadow = '10px 10px 10px 4px rgba(0, 0, 0, 0.1)';
     if(container) container.style.backgroundColor = 'white';
     if(name) name.style.color = 'black';
+    if(github) github.style.backgroundImage = "url('../icons/github.svg')";
+    if(linkedin) linkedin.style.backgroundImage = "url('../icons/linkedin.svg')";
+    if(email) email.style.backgroundImage = "url('../icons/email.svg')";
     
     for(let i = 0; i < tabs.length; i++) {
       tabs[i].style.color = 'black';

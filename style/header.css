@@ -58,7 +58,7 @@ header p{
   transform: scaleX(1);
 }
 
-#dark-theme{
+.dark-theme, .white-theme{
   width: 20px;
   height: 20px;
   border: none;
@@ -72,7 +72,10 @@ header p{
   transition: transform 0.8s;
 }
 
-#dark-theme:hover{
+.dark-theme:hover, .white-theme:hover{
   transform: rotate(360deg);
 }
 
+.white-theme{
+  background-image: url('../icons/sun.svg');
+}
