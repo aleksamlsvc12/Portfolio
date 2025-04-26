@@ -47,7 +47,7 @@
   padding: 12px 30px;
   cursor: pointer;
   box-shadow: 10px 10px 10px 4px rgba(140, 0, 140, 0.2);
-  transition: background-color 0.2s, box-shadow 0.4s, padding 0.3s;
+  transition: background-color 0.2s, box-shadow 0.2s, padding 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,4 +197,3 @@ button img{
     font-size: 12px;
   }
 }
-
