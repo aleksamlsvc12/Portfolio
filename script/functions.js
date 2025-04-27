@@ -137,6 +137,12 @@ function applyLang(){
   let titleDesc = document.getElementById('title-desc');
   let txtButton = document.getElementById('download');
 
+  let statsBeginner = document.getElementsByClassName('stats-beginner');
+  let statsIntermediate = document.getElementsByClassName('stats-intermediate');
+  let statsAdvanced = document.getElementsByClassName('stats-advanced');
+  let statsCompleted = document.getElementsByClassName('stats-completed');
+  let statsDate = document.getElementsByClassName('stats-date');
+
   let currentLang = localStorage.getItem('lang');
   if(currentLang === 'ser'){
     tabs[0].innerHTML = 'Početna';
@@ -152,6 +158,43 @@ function applyLang(){
     if(txtButton)
       txtButton.innerHTML = `<img src="../icons/doc.svg" alt="doc"> Preuzmi CV`;
 
+    if(statsBeginner){
+      for(let i=0;i<statsBeginner.length;i++){
+        statsBeginner[i].innerHTML = 'Početni nivo';
+      }
+    }
+
+    if(statsIntermediate){
+      for(let i=0;i<statsIntermediate.length;i++){
+        statsIntermediate[i].innerHTML = 'Srednji nivo';
+      }
+    }
+
+    if(statsAdvanced){
+      for(let i=0;i<statsAdvanced.length;i++){
+        statsAdvanced[i].innerHTML = 'Napredni nivo';
+      }
+    }
+
+    if(statsCompleted){
+      for(let i=0;i<statsCompleted.length;i++){
+        statsCompleted[i].innerHTML = 'Završeno';
+      }
+    }
+
+    if(statsDate){
+      for(let i=0; i<statsDate.length;i++){
+        statsDate[0].innerHTML = '8/11/2024';
+        statsDate[1].innerHTML = '4/4/2025';
+        statsDate[2].innerHTML = '31/3/2025';
+        statsDate[3].innerHTML = '9/4/2025';
+        statsDate[4].innerHTML = '8/4/2025';
+        statsDate[5].innerHTML = '4/4/2025';
+        statsDate[6].innerHTML = '2/4/2025';
+        statsDate[7].innerHTML = '24/10/2024';
+      }
+    }
+
   }else{
     tabs[0].innerHTML = 'Home';
     tabs[1].innerHTML = 'Projects';
@@ -165,7 +208,47 @@ function applyLang(){
   
     if(txtButton)
       txtButton.innerHTML = `<img src="../icons/doc.svg" alt="doc"> Download CV`;
-  }
-
   
+    if(statsBeginner){
+      for(let i=0;i<statsBeginner.length;i++){
+        statsBeginner[i].innerHTML = 'Beginner';
+      }
+    }
+
+    if(statsIntermediate){
+      for(let i=0;i<statsIntermediate.length;i++){
+        statsIntermediate[i].innerHTML = 'Intermediate';
+      }
+    }
+
+    if(statsAdvanced){
+      for(let i=0;i<statsAdvanced.length;i++){
+        statsAdvanced[i].innerHTML = 'Advanced';
+      }
+    }
+
+    if(statsCompleted){
+      for(let i=0;i<statsCompleted.length;i++){
+        statsCompleted[i].innerHTML = 'Completed';
+      }
+    }
+
+    if(statsDate){
+      for(let i=0;i<statsDate.length;i++){
+        statsDate[0].innerHTML = changeDate('8/11/2024');
+        statsDate[1].innerHTML = changeDate('4/4/2025');
+        statsDate[2].innerHTML = changeDate('31/3/2025');
+        statsDate[3].innerHTML = changeDate('9/4/2025');
+        statsDate[4].innerHTML = changeDate('8/4/2025');
+        statsDate[5].innerHTML = changeDate('4/4/2025');
+        statsDate[6].innerHTML = changeDate('2/4/2025');
+        statsDate[7].innerHTML = changeDate('24/10/2024');
+      }
+    }
+  }
+}
+
+function changeDate(date){
+  const [d,m,y] = date.split('/');
+  return `${m}/${d}/${y}`;
 }
