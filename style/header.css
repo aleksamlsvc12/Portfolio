@@ -72,10 +72,46 @@ header p{
   transition: transform 0.8s;
 }
 
+.lang{
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-image: url('../icons/lang.svg');
+  background-size: contain;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+  transition: transform 0.2s;
+}
+
+.lang:hover{
+  animation: shake 0.5s ease-in-out infinite;
+}
+
 .dark-theme:hover, .white-theme:hover{
   transform: rotate(360deg);
 }
 
 .white-theme{
   background-image: url('../icons/sun.svg');
+  
+}
+
+@keyframes shake{
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(1px);
+  }
+  50% {
+    transform: translateX(-1px);
+  }
+  75% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

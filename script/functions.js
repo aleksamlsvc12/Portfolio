@@ -120,3 +120,52 @@ function darkTheme(){
   }
   applyTheme();
 }
+
+function changeLang(){
+  if(localStorage.getItem('lang') === 'ser'){
+    localStorage.setItem('lang','eng');
+  }else{
+    localStorage.setItem('lang','ser');
+  }
+  applyLang();
+}
+
+function applyLang(){
+  let tabs = document.getElementsByClassName('tab');
+  
+  let title = document.getElementById('title');
+  let titleDesc = document.getElementById('title-desc');
+  let txtButton = document.getElementById('download');
+
+  let currentLang = localStorage.getItem('lang');
+  if(currentLang === 'ser'){
+    tabs[0].innerHTML = 'Početna';
+    tabs[1].innerHTML = 'Projekti';
+    tabs[2].innerHTML = 'O meni';
+
+    if(title)
+      title.innerHTML = "Ja sam<span class = 'break-row color'>inženjer elektrotehnike i računarstva<span>"
+
+    if(titleDesc)
+      titleDesc.innerHTML = "Ja sam student završne godine Visoke škole elektrotehnike i računarstva,<span class = 'break-row'>smer Računarska tehnika.";
+
+    if(txtButton)
+      txtButton.innerHTML = `<img src="../icons/doc.svg" alt="doc"> Preuzmi CV`;
+
+  }else{
+    tabs[0].innerHTML = 'Home';
+    tabs[1].innerHTML = 'Projects';
+    tabs[2].innerHTML = 'About';
+
+    if(title)
+      title.innerHTML = "I am an<span class = 'break-row color'>Electrical and Computer Engineer"
+
+    if(titleDesc)
+      titleDesc.innerHTML = "I am a final year student of the School of Electrical and Computer Engineering,<span class = 'break-row'>majoring in Computer Engineering.";
+  
+    if(txtButton)
+      txtButton.innerHTML = `<img src="../icons/doc.svg" alt="doc"> Download CV`;
+  }
+
+  
+}
