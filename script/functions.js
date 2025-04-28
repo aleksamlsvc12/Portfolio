@@ -333,3 +333,20 @@ function changeLang(){
   }
   applyLang();
 }
+
+function link(site) {
+  const sites = {
+    'YouTube': 'https://aleksamlsvc12.github.io/Youtube/',
+    'To-Do List': 'https://aleksamlsvc12.github.io/To-Do-List/',
+    'Reveal Cards': 'https://aleksamlsvc12.github.io/Reveal-Cards/',
+    'Profile Card': 'https://aleksamlsvc12.github.io/Profile-Card/',
+    'Pagination': 'https://aleksamlsvc12.github.io/Pagination/',
+    'Foto Gallery': 'https://aleksamlsvc12.github.io/Foto-Gallery/',
+    'Form Validation': 'https://aleksamlsvc12.github.io/Form-Validation/',
+    'Calculator': 'https://aleksamlsvc12.github.io/Calculator/'
+  };
+
+  if (sites[site]) {
+    window.location.href = sites[site];
+  }
+}

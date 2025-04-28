@@ -55,6 +55,6 @@ main{
   border-radius: 10px;
 }
 
-.block-clicks{
+.block-click{
   pointer-events: none;
 }

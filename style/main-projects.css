@@ -27,10 +27,6 @@ main{
   box-shadow: 0 0 10px 10px rgba(140, 0, 140, 0.1);
 }
 
-main a{
-  border-radius: 50px;
-}
-
 .one{
   animation-delay: 0.2s;
 }
