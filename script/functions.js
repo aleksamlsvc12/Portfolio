@@ -29,9 +29,6 @@ function applyTheme() {
 
     for(let i=0;i<tabs.length;i++){
       tabs[i].classList.add('darkTab');
-    }
-
-    for(let i = 0; i < tabs.length; i++) {
       tabs[i].style.color = 'white';
     }
 
@@ -74,9 +71,6 @@ function applyTheme() {
 
     for(let i=0;i<tabs.length;i++){
       tabs[i].classList.remove('darkTab');
-    }
-
-    for(let i = 0; i < tabs.length; i++) {
       tabs[i].style.color = 'black';
     }
 
@@ -114,9 +108,6 @@ function applyTheme() {
     }
   }
 }
-
-
-
 
 
 
@@ -308,9 +299,6 @@ function changeDate(date){
 
 
 
-
-
-
 function darkTheme(){
   if(localStorage.getItem('theme') === 'whiteTheme'){
     localStorage.setItem('theme','darkTheme');
@@ -322,9 +310,6 @@ function darkTheme(){
 
 
 
-
-
-
 function changeLang(){
   if(localStorage.getItem('lang') === 'ser'){
     localStorage.setItem('lang','eng');
@@ -333,6 +318,8 @@ function changeLang(){
   }
   applyLang();
 }
+
+
 
 function link(site) {
   const sites = {

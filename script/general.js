@@ -1,9 +1,6 @@
 window.onload = function(){
   document.body.style.display = 'flex';
 
-  applyTheme();
-  applyLang();
-
   if (!localStorage.getItem('theme')) {
     localStorage.setItem('theme', 'whiteTheme');
   }
@@ -11,7 +8,10 @@ window.onload = function(){
   if (!localStorage.getItem('lang')) {
     localStorage.setItem('lang', 'ser');
   }
-  
+
+  applyTheme();
+  applyLang();
+
   let contact = document.getElementsByClassName('contact');
   let desc = document.getElementById('desc');
   let project = document.getElementsByClassName('project');
@@ -31,7 +31,6 @@ window.onload = function(){
     });
   }
 
-  
   for(let i=0;i<project.length;i++){
     project[i].classList.add('block-click');
     project[i].addEventListener('animationend',()=>{
@@ -39,7 +38,6 @@ window.onload = function(){
     });
   }
   
-
   if(aboutDivs[1]){
     aboutDivs[1].classList.add('block-click');
     aboutDivs[1].addEventListener('animationend',()=>{
@@ -47,4 +45,3 @@ window.onload = function(){
     });
   }
 }
-
