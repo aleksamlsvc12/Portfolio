@@ -115,23 +115,10 @@ function applyTheme() {
   }
 }
 
-function darkTheme(){
-  if(localStorage.getItem('theme') === 'whiteTheme'){
-    localStorage.setItem('theme','darkTheme');
-  }else{
-    localStorage.setItem('theme','whiteTheme');
-  }
-  applyTheme();
-}
 
-function changeLang(){
-  if(localStorage.getItem('lang') === 'ser'){
-    localStorage.setItem('lang','eng');
-  }else{
-    localStorage.setItem('lang','ser');
-  }
-  applyLang();
-}
+
+
+
 
 function applyLang(){
   let tabs = document.getElementsByClassName('tab');
@@ -196,8 +183,7 @@ function applyLang(){
       }
     }
 
-    if(statsDate){
-      for(let i=0; i<statsDate.length;i++){
+    if(statsDate.length>0){
         statsDate[0].innerHTML = '8/11/2024';
         statsDate[1].innerHTML = '4/4/2025';
         statsDate[2].innerHTML = '31/3/2025';
@@ -206,15 +192,12 @@ function applyLang(){
         statsDate[5].innerHTML = '4/4/2025';
         statsDate[6].innerHTML = '2/4/2025';
         statsDate[7].innerHTML = '24/10/2024';
-      }
     }
 
-    if(headerAbout){
-      for(let i=0;i<headerAbout.length;i++){
+    if(headerAbout.length>0){
         headerAbout[0].innerHTML = 'O MENI';
         headerAbout[1].innerHTML = 'OBRAZOVANJE';
         headerAbout[2].innerHTML = 'VEŠTINE';
-      }
     }
 
     if(txtAbout.length>0){
@@ -279,8 +262,7 @@ function applyLang(){
       }
     }
 
-    if(statsDate){
-      for(let i=0;i<statsDate.length;i++){
+    if(statsDate.length>0){
         statsDate[0].innerHTML = changeDate('8/11/2024');
         statsDate[1].innerHTML = changeDate('4/4/2025');
         statsDate[2].innerHTML = changeDate('31/3/2025');
@@ -289,15 +271,12 @@ function applyLang(){
         statsDate[5].innerHTML = changeDate('4/4/2025');
         statsDate[6].innerHTML = changeDate('2/4/2025');
         statsDate[7].innerHTML = changeDate('24/10/2024');
-      }
     }
 
-    if(headerAbout){
-      for(let i=0;i<headerAbout.length;i++){
+    if(headerAbout.length>0){
         headerAbout[0].innerHTML = 'ABOUT';
         headerAbout[1].innerHTML = 'EDUCATION';
         headerAbout[2].innerHTML = 'SKILLS';
-      }
     }
 
     if(txtAbout.length>0){
@@ -325,4 +304,32 @@ function applyLang(){
 function changeDate(date){
   const [d,m,y] = date.split('/');
   return `${m}/${d}/${y}`;
+}
+
+
+
+
+
+
+function darkTheme(){
+  if(localStorage.getItem('theme') === 'whiteTheme'){
+    localStorage.setItem('theme','darkTheme');
+  }else{
+    localStorage.setItem('theme','whiteTheme');
+  }
+  applyTheme();
+}
+
+
+
+
+
+
+function changeLang(){
+  if(localStorage.getItem('lang') === 'ser'){
+    localStorage.setItem('lang','eng');
+  }else{
+    localStorage.setItem('lang','ser');
+  }
+  applyLang();
 }

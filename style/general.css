@@ -54,3 +54,7 @@ main{
   background: rgb(140, 0, 140);
   border-radius: 10px;
 }
+
+.block-clicks{
+  pointer-events: none;
+}
