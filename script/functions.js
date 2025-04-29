@@ -35,9 +35,9 @@ function applyTheme() {
     langButton.classList.add('lang-white');
     darkThemeButton.classList.add('white-theme');
 
-    github.style.backgroundImage = "url('../icons/github-white.svg')";
-    linkedin.style.backgroundImage = "url('../icons/linkedin-white.svg')";
-    email.style.backgroundImage = "url('../icons/email-white.svg')";
+    github.style.backgroundImage = "url('icons/github-white.svg')";
+    linkedin.style.backgroundImage = "url('icons/linkedin-white.svg')";
+    email.style.backgroundImage = "url('icons/email-white.svg')";
     
     if(title) 
       title.style.color = 'white';
@@ -77,9 +77,9 @@ function applyTheme() {
     langButton.classList.remove('lang-white');
     darkThemeButton.classList.remove('white-theme');
 
-    github.style.backgroundImage = "url('../icons/github.svg')";
-    linkedin.style.backgroundImage = "url('../icons/linkedin.svg')";
-    email.style.backgroundImage = "url('../icons/email.svg')";
+    github.style.backgroundImage = "url('icons/github.svg')";
+    linkedin.style.backgroundImage = "url('icons/linkedin.svg')";
+    email.style.backgroundImage = "url('icons/email.svg')";
     
     if(title) 
       title.style.color = 'black';
@@ -144,10 +144,10 @@ function applyLang(){
       titleDesc.innerHTML = "Ja sam student završne godine Visoke škole elektrotehnike i računarstva,<span class = 'break-row'>smer Računarska tehnika.";
 
     if(txtButton)
-      txtButton.innerHTML = `<img src="../icons/doc.svg" alt="doc"> Preuzmi CV`;
+      txtButton.innerHTML = `<img src="icons/doc.svg" alt="doc"> Preuzmi CV`;
 
     if(downloadLink){
-      downloadLink.href = '../docs/cv-aleksa-milosevic-serbian.pdf';
+      downloadLink.href = 'docs/cv-aleksa-milosevic-serbian.pdf';
     }
 
     if(statsBeginner){
@@ -223,10 +223,10 @@ function applyLang(){
       titleDesc.innerHTML = "I am a final year student of the School of Electrical and Computer Engineering,<span class = 'break-row'>majoring in Computer Engineering.";
   
     if(txtButton)
-      txtButton.innerHTML = `<img src="../icons/doc.svg" alt="doc"> Download CV`;
+      txtButton.innerHTML = `<img src="icons/doc.svg" alt="doc"> Download CV`;
   
     if(downloadLink){
-      downloadLink.href = '../docs/cv-aleksa-milosevic.pdf';
+      downloadLink.href = 'docs/cv-aleksa-milosevic-english.pdf';
     }
 
     if(statsBeginner){
