@@ -141,7 +141,7 @@ function applyLang(){
       title.innerHTML = "Ja sam<span class = 'break-row color'>inženjer elektrotehnike i računarstva<span>"
 
     if(titleDesc)
-      titleDesc.innerHTML = "Ja sam student završne godine Visoke škole elektrotehnike i računarstva,<span class = 'break-row'>smer Računarska tehnika.";
+      titleDesc.innerHTML = "Ja sam student završne godine Visoke škole elektrotehnike i računarstva, <span class = 'break-row'>smer Računarska tehnika.";
 
     if(txtButton)
       txtButton.innerHTML = `<img src="icons/doc.svg" alt="doc"> Preuzmi CV`;
@@ -220,7 +220,7 @@ function applyLang(){
       title.innerHTML = "I am an<span class = 'break-row color'>Electrical and Computer Engineer"
 
     if(titleDesc)
-      titleDesc.innerHTML = "I am a final year student of the School of Electrical and Computer Engineering,<span class = 'break-row'>majoring in Computer Engineering.";
+      titleDesc.innerHTML = "I am a final year student of the School of Electrical and Computer Engineering, <span class = 'break-row'>majoring in Computer Engineering.";
   
     if(txtButton)
       txtButton.innerHTML = `<img src="icons/doc.svg" alt="doc"> Download CV`;

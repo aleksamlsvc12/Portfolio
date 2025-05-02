@@ -1,7 +1,5 @@
 header{
   height: 16%;
-  padding-left: 30px;
-  padding-right: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,10 +8,6 @@ header{
 
 header p{
   margin: 0;
-}
-
-#container-name{
-  margin-left: 20px;
 }
 
 #name{
@@ -67,9 +61,8 @@ header p{
   background-size: contain;
   background-color: transparent;
   cursor: pointer;
-  margin-right: 20px;
   margin-left: 20px;
-  transition: transform 0.8s;
+  transition: transform 0.4s;
 }
 
 .lang{
@@ -82,11 +75,7 @@ header p{
   cursor: pointer;
   margin-right: 20px;
   margin-left: 20px;
-  transition: transform 0.2s;
-}
-
-.lang:hover{
-  animation: shake 0.5s ease-in-out infinite;
+  transition: transform 0.4s;
 }
 
 .lang-white{
@@ -99,22 +88,4 @@ header p{
 
 .white-theme{
   background-image: url('../icons/sun.svg');
-}
-
-@keyframes shake{
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(1px);
-  }
-  50% {
-    transform: translateX(-1px);
-  }
-  75% {
-    transform: translateX(1px);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }

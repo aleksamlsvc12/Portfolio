@@ -1,6 +1,5 @@
 #desc{
   width: 100%;
-  padding-left: 50px;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -60,7 +59,7 @@
 @keyframes slideInLeft {
   from{
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-10px);
   }
 
   to {
@@ -72,7 +71,7 @@
 @keyframes slideInRight {
   from{
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateX(10px);
   }
 
   to {
@@ -116,6 +115,7 @@ button img{
 
   #container{
     width: 80%;
+    height: 90vh;
   }
 
   button img{
@@ -123,11 +123,24 @@ button img{
     height: 18px;
   }
 
+  #container-name{
+    margin-left: 0;
+  }
+
+  header{
+    margin-bottom: 20px;
+  }
+
+  footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
 }
 
 @media(max-width:1330px){
   #title{
-    font-size: 28px;
+    font-size: 24px;
   }
 
   #title-desc{
@@ -184,12 +197,61 @@ button img{
   }
 }
 
-@media(max-width:1000px){
+@media (max-width: 768px){
   #title{
-    font-size: 24px;
+    font-size: 18px;
+  }
+
+  #profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
   }
 
   #title-desc{
     font-size: 12px;
+  }
+
+  #title-desc .break-row{
+    display: inline;
+  }
+
+  #download:hover{
+    background-color: rgb(140, 0, 140);
+    box-shadow: 10px 10px 10px 4px rgba(140, 0, 140, 0.2);
+  }
+
+  /*--------------------------------------------------------------------*/
+
+  #container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #name{
+    font-size: 26px;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+
+  .lang, .dark-theme{
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .dark-theme:hover, .white-theme:hover, .lang:hover, .contact:hover{
+    transform: none;
+  }
+
+  .tab::after, .darkTab::after {
+    display: none;
   }
 }
