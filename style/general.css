@@ -61,3 +61,37 @@ main{
 .block-click{
   pointer-events: none;
 }
+
+@media(max-width:768px){
+  #container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #name{
+    font-size: 26px;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+
+  .lang, .dark-theme{
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .dark-theme:hover, .white-theme:hover, .lang:hover, .contact:hover{
+    transform: none;
+  }
+
+  .tab::after, .darkTab::after {
+    display: none;
+  }
+}

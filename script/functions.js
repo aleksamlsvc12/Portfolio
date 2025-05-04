@@ -292,6 +292,8 @@ function applyLang(){
   }
 }
 
+
+
 function changeDate(date){
   const [d,m,y] = date.split('/');
   return `${m}/${d}/${y}`;
